@@ -1,4 +1,4 @@
-package com.pjh.example.algorithm.dfs;
+package com.pjh.example.algorithm.basic.dfs;
 
 import java.util.LinkedList;
 import java.util.Stack;

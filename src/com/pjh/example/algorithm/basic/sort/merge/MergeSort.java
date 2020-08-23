@@ -1,4 +1,4 @@
-package com.pjh.example.algorithm.sort.merge;
+package com.pjh.example.algorithm.basic.sort.merge;
 
 /**
  *  정렬된 2개의 array를 처음 값을 비교하여 결과 배열에 저장한다

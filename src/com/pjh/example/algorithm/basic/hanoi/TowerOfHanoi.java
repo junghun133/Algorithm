@@ -1,4 +1,4 @@
-package com.pjh.example.algorithm.hanoi;
+package com.pjh.example.algorithm.basic.hanoi;
 
 import java.util.Scanner;
 
