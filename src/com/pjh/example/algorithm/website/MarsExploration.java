@@ -1,4 +1,4 @@
-package com.pjh.example.algorithm.hackerrank;
+package com.pjh.example.algorithm.website;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class MarsExploration {
 
-    // Complete the marsExploration function below.
+    // hacker rank
     static int marsExploration(String s) {
         char[] formatStr = {'S', 'O', 'S'};
         int result =0;
