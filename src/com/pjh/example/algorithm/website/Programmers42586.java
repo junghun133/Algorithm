@@ -6,8 +6,8 @@ public class Programmers42586 {
     //https://programmers.co.kr/learn/courses/30/lessons/42586
     static class Solution {
         public static void main(final String[] args) {
-            int[] progresses = {93,30,55};
-            int[] speeds = {1,30,5};
+            int[] progresses = {1, 1, 1, 1, 1, 1, 1};
+            int[] speeds = {1, 1, 1, 50, 1, 1, 1};
 
             System.out.println(Arrays.toString(solution(progresses, speeds)));
             //return 2,1
@@ -39,6 +39,7 @@ public class Programmers42586 {
                             continue;
                         }
                     }else {
+//                        if (pro[j].isCompleted() && pro[j].previousProcess.isCompleted()) {
                         if (pro[j].isCompleted() && pro[j].previousProcess.isCompleted()) {
                             if (answer.containsKey(pro[j].day)) {
                                 answer.put(pro[j].day, answer.get(pro[j].day) + 1);
@@ -88,7 +89,10 @@ public class Programmers42586 {
             }
 
             public boolean isCompleted(){
-                return pro >= 100;
+                if(previousProcess == null){
+                    return pro >= 100;
+                }
+                return previousProcess.isCompleted() && pro >= 100;
             }
         }
     }
