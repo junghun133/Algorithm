@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Programmers42840 {
     public static void main(final String[] args) {
+        //https://programmers.co.kr/learn/courses/30/lessons/42840
         int[] answer = new int[]{2, 1, 2, 3, 2, 4, 2, 5, 2, 1, 2, 3, 2, 4, 2, 5};
         System.out.println(Arrays.toString(solution(answer)));
     }
@@ -44,7 +45,7 @@ public class Programmers42840 {
         int completeCnt = 0;
         int guessCnt = 0;
         for(int i = 0; i < answers.length; i++){
-            if((i/(guess.length-1)) == 1)
+            if((i%guess.length) == 0)
                 guessCnt = 0;
 
             if(answers[i] == guess[guessCnt]){
