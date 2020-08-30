@@ -44,6 +44,7 @@ class Graph{
         Node root = nodes[index];
         Stack<Node> stack = new Stack<Node>();
         stack.push(root);
+
         root.marked = true;
 
         while(!stack.isEmpty()){
@@ -56,6 +57,8 @@ class Graph{
             }
             visit(r);
         }
+      
+
     }
 
     void dfsR(Node r){
