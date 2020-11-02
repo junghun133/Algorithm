@@ -1,7 +1,7 @@
 package com.pjh.example.algorithm.website;
 
 public class Programmers42883_greedy {
-
+    //https://programmers.co.kr/learn/courses/30/lessons/42883
     public static void main(final String[] args) {
         System.out.println(solution("1924", 2));
     }
@@ -18,6 +18,7 @@ public class Programmers42883_greedy {
         if(k!=0)
             sb.delete(sb.length()-k, sb.length());
         return sb.toString();
+
 
     }
 }
