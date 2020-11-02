@@ -1,9 +1,5 @@
 package com.pjh.example.algorithm.website;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 //https://programmers.co.kr/learn/courses/30/lessons/42862
 public class Programmers42862_greedy {
 
@@ -33,9 +29,7 @@ public class Programmers42862_greedy {
             int pre = 0;
             int next = 0;
 
-            if(lost[i]-1 != 0) {
-                pre = lost[i]-1;
-            }
+            pre = lost[i]-1 != 0 ? lost[i]-1 : 0;
             next = lost[i]+1;
 
             for(int index = 0; index < reserve.length; index++){
