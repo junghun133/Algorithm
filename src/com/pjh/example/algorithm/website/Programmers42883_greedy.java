@@ -18,5 +18,6 @@ public class Programmers42883_greedy {
         if(k!=0)
             sb.delete(sb.length()-k, sb.length());
         return sb.toString();
+
     }
 }
